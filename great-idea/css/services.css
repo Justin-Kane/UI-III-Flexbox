@@ -63,9 +63,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-
 .container {
 	width: 800px;
 	margin: auto;
@@ -93,86 +90,106 @@ header nav a {
 	text-decoration: none;
 	color: black;
 	opacity: .7;
-}
-
-header img {
+	padding-right: 25px;
 }
 
 /* Banner Styles */
 
-.container .main-banner {
-	display: flex;
-	justify-content: space-around;
-	padding: 20px 0px 40px 0px;
+.banner {
+	border-bottom: 2px solid black;
 }
 
-.main-banner .banner-text {
-	margin-top: 7%;
-	font-size: 30px;
-	text-align: center;
-}
-
-.main-banner .banner-text h1 {
-	font-size: 55px;
-	margin-bottom: -5px;
-}
-
-.main-banner img {
-	max-width: 40%;
-}
-
-.main-banner .banner-text a {
-	padding: 1px 30px 1px 30px;
-	border: 3px solid black;
-	text-decoration: none;
-	font-size: 25%;
-	font-family: 'Titillium Web';
-	color: black;
-	opacity: .7;
-}
-
-/* Content 1 */
-
-.content-1 {
-	border-top: 3px solid black;
-	display: flex;
-	justify-content: space-evenly;
-	padding: 30px 0px 30px 0px;
-}
-
-.content-1 div {
-	width: 40%;
-}
-
-
-/* Image Banner */
-
-.image-banner img{
+.banner img{
 	width: 100%;
 	height: auto;
 }
 
-/* Content 2 */
+.banner .banner-text {
+	margin: 25px 0px 25px 0px;
+	
+}
 
-.content-2 {
+.banner .banner-text h2 {
+	font-size: 25Fpx;
+}
+
+/* MAIN CONTENT STYLES */
+
+.main-content {
+	margin: 25px 0px 25px 0px;
+	height: 700px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
-	border-bottom: 3px solid black;
-	padding: 30px 0px 30px 0px;
+	align-content: space-around;
 }
 
-.content-2 div {
-	width: 30%;
+.main-content div {
+	border: inherit;
+	width: 45%;
+	height: 30%;
+	padding: 15px;
+	background-color:#d9d9d9;
+	border: 2px solid black;
+
 }
 
-/*  Footer */
-
-footer {
-	margin-top: 25px;
-}
-
-.copyright-info {
+.main-content div a {
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: white;
+	height: 30px;
+	width: 130px;
+	padding-top: 4px;
+	margin-top: 10px;
 	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 50px;
+	text-decoration: none;
+	color: black;
+	
+}
+
+/* BOTTOM CONTENT STYLES */
+
+.bottom-content {
+	border-top: 2px solid black;
+	display: flex;
+}
+
+.bottom-content div {
+
+	width: 50%;
+}
+
+.bottom-content .text {
+	
+	padding: 35px 45px 10px 0px;
+}
+
+.bottom-content .text p {
+	margin-bottom: 25px;
+	width: 110%;
+}
+
+.bottom-content .image img {
+	padding: 25px;
+	height: 86%;
+	margin-top: 15px;
+	
+}
+
+.bottom-content .text ul li {
+	list-style-type: disc;
+}
+
+.bottom-content .text ul li {
+	margin: 17px;
+}
+
+
+/* FOOTER STYLES */
+
+.footer #copyright {
+	text-align: center;
+	margin: 25px;
 }
